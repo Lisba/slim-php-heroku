@@ -20,8 +20,7 @@ class Usuario
     $estado = "No se pudo efectuar el registro!";
     if(isset($usuario->nombre) && isset($usuario->clave) && isset($usuario->email))
     {
-      // $path = "{$_SERVER['DOCUMENT_ROOT']}/slim-php-heroku/app/ejercicios/ejercicio20/users.csv";
-      $miArchivo = fopen("users.csv", "a");
+      $miArchivo = fopen("usuarios.csv", "a");
       fwrite($miArchivo, "$usuario->nombre, $usuario->clave, $usuario->email\n");
       fclose($miArchivo);
       $estado = "Datos registrados con éxito!";
