@@ -21,7 +21,7 @@ class Usuario
     if(isset($usuario->nombre) && isset($usuario->clave) && isset($usuario->email))
     {
       $miArchivo = fopen("usuarios.csv", "a");
-      fwrite($miArchivo, "$usuario->nombre, $usuario->clave, $usuario->email\n");
+      fwrite($miArchivo, "$usuario->nombre,$usuario->clave,$usuario->email\n");
       fclose($miArchivo);
       $estado = "Datos registrados con éxito!";
     }
