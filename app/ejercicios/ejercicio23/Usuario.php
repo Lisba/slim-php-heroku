@@ -35,7 +35,7 @@ class Usuario
     if($objectToSave !== NULL && !empty($nombreArchivo))
     {
       $archivoJson = fopen($nombreArchivo, "a");
-      fwrite($archivoJson, json_encode($objectToSave, JSON_PRETTY_PRINT).",\n");
+      fwrite($archivoJson, json_encode($objectToSave, JSON_PRETTY_PRINT).",");
       fclose($archivoJson);
       $estado = "Datos registrados con éxito en {$nombreArchivo}";
     }
