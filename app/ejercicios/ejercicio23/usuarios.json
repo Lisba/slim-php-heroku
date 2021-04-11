@@ -1,21 +1,13 @@
 {
-    "id": 1,
+    "id": 6287,
     "nombre": "Lisba",
-    "clave": "123",
+    "clave": "1234",
     "email": "lisba@email.com",
-    "fechaRegistro": {
-        "date": "2021-04-07 05:32:30.287726",
-        "timezone_type": 3,
-        "timezone": "Europe\/Berlin"
-    }
+    "fechaRegistro": "April 11, 2021, 6:02 pm"
 },{
-    "id": 1,
+    "id": 1337,
     "nombre": "Jesus",
     "clave": "123",
     "email": "jesus@email.com",
-    "fechaRegistro": {
-        "date": "2021-04-07 05:32:42.787082",
-        "timezone_type": 3,
-        "timezone": "Europe\/Berlin"
-    }
+    "fechaRegistro": "April 11, 2021, 6:02 pm"
 },

@@ -6,17 +6,15 @@ class Usuario
   public $clave;
   public $email;
   public $fechaRegistro;
-  public static $idGlobal = 1;
   public static $pathUsuariosJson = "./usuarios.json";
 
   public function __construct($nombre, $clave, $email)
   {
-    $this->id = self::$idGlobal;
+    $this->id = mt_rand(1,10000);
     $this->nombre = $nombre;
     $this->clave = $clave;
     $this->email = $email;
-    $this->fechaRegistro = new DateTime("now");
-    self::$idGlobal++;
+    $this->fechaRegistro = date('F j, Y, g:i a');
   }
 
   public function __get($name)
