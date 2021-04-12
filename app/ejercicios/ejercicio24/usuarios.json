@@ -1,0 +1,18 @@
+[
+  {
+    "id": 6287,
+    "nombre": "Lisba",
+    "apellido": "Ojeda",
+    "clave": "1234",
+    "email": "lisba@email.com",
+    "fechaRegistro": "April 11, 2021, 6:02 pm"
+  },
+  {
+    "id": 1337,
+    "nombre": "Jesus",
+    "apellido": "Leon",
+    "clave": "123",
+    "email": "jesus@email.com",
+    "fechaRegistro": "April 11, 2021, 6:02 pm"
+  }
+]
