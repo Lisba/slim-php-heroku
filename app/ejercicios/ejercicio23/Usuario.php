@@ -6,7 +6,6 @@ class Usuario
   public $clave;
   public $email;
   public $fechaRegistro;
-  public static $pathUsuariosJson = "./usuarios.json";
 
   public function __construct($nombre, $clave, $email)
   {
@@ -27,25 +26,58 @@ class Usuario
       $this->$name = $value;
   }
 
-  static function GuardarEnJson(Object $objectToSave, String $nombreArchivo)
+  static function LeerJson(String $nombreDelArchivo = NULL)
+  {
+    try
+    {
+      $returnValue = "Información no disponible. Revise el archivo que desea consultar!";
+      if($nombreDelArchivo !== NULL)
+      {
+        if(!file_exists($nombreDelArchivo))
+        {
+          $nuevoArchivo = fopen($nombreDelArchivo, "w");
+          fclose($nuevoArchivo);
+          return [];
+        }
+        $archivo = fopen($nombreDelArchivo, "r");
+        $size = filesize($nombreDelArchivo);
+        $data = '{}';
+        if ($size > 0) {
+          $data = fread($archivo, $size);
+        }
+        fclose($archivo);
+        $returnValue = json_decode($data);
+      }
+      return $returnValue;
+    }
+    catch (\Throwable $e)
+    {
+      echo $e->getMessage();
+    }
+  }
+
+  static function GuardarEnJson(Array $arrayObjectToSave = NULL, String $nombreArchivo = '')
   {
     $estado = "No se pudo efectuar el registro! Falta el nombre del archivo o el objeto es NULL!";
-    if($objectToSave !== NULL && !empty($nombreArchivo))
+    if($arrayObjectToSave !== NULL && !empty($nombreArchivo))
     {
-      $archivoJson = fopen($nombreArchivo, "a");
-      fwrite($archivoJson, json_encode($objectToSave, JSON_PRETTY_PRINT).",");
+      $archivoJson = fopen($nombreArchivo, "w");
+      fwrite($archivoJson, json_encode($arrayObjectToSave, JSON_PRETTY_PRINT));
       fclose($archivoJson);
       $estado = "Datos registrados con éxito en {$nombreArchivo}";
     }
     return $estado;
   }
 
-  static function AltaUsuario(Usuario $usuario)
+  static function AltaUsuario(Usuario $usuario, String $nombreDelArchivo = NULL)
   {
     $estado = "No se pudo efectuar el registro por falta de datos en el objeto!";
-    if(isset($usuario->nombre) && isset($usuario->clave) && isset($usuario->email) && isset($usuario->fechaRegistro) && isset($usuario->id))
+    $dataDelArchivo = [];
+    if(isset($usuario->nombre) && isset($usuario->clave) && isset($usuario->email) && isset($usuario->fechaRegistro) && isset($usuario->id) && $nombreDelArchivo !== NULL)
     {
-      $estado = self::GuardarEnJson($usuario, self::$pathUsuariosJson);
+      $dataDelArchivo = self::LeerJson($nombreDelArchivo);
+      array_push($dataDelArchivo, $usuario);
+      $estado = self::GuardarEnJson($dataDelArchivo, $nombreDelArchivo);
     }
     return $estado;
   }

@@ -1,13 +1,16 @@
-{
-    "id": 6287,
-    "nombre": "Lisba",
-    "clave": "1234",
-    "email": "lisba@email.com",
-    "fechaRegistro": "April 11, 2021, 6:02 pm"
-},{
-    "id": 1337,
-    "nombre": "Jesus",
-    "clave": "123",
-    "email": "jesus@email.com",
-    "fechaRegistro": "April 11, 2021, 6:02 pm"
-},
+[
+    {
+        "id": 9632,
+        "nombre": "Lisba",
+        "clave": "1234",
+        "email": "lisba@email.com",
+        "fechaRegistro": "April 13, 2021, 8:49 pm"
+    },
+    {
+        "id": 1678,
+        "nombre": "Jesus",
+        "clave": "123",
+        "email": "jesus@email.com",
+        "fechaRegistro": "April 13, 2021, 8:49 pm"
+    }
+]
