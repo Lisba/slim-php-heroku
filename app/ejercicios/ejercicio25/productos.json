@@ -1,0 +1,98 @@
+[
+    {
+        "codigoBarra": "123456",
+        "nombre": "Martillo",
+        "tipo": "Herramienta",
+        "stock": 10,
+        "precio": 20.5,
+        "id": 7735
+    },
+    {
+        "codigoBarra": "123456",
+        "nombre": "Martilloooo",
+        "tipo": "Herramientassss",
+        "stock": 2,
+        "precio": 2.29999999999999982236431605997495353221893310546875,
+        "id": 4681
+    },
+    {
+        "codigoBarra": "123456",
+        "nombre": "Martilloooo",
+        "tipo": "Herramientassss",
+        "stock": 2,
+        "precio": 2.29999999999999982236431605997495353221893310546875,
+        "id": 2238
+    },
+    {
+        "codigoBarra": "123456",
+        "nombre": "Martilloooo",
+        "tipo": "Herramientassss",
+        "stock": 2,
+        "precio": 2.29999999999999982236431605997495353221893310546875,
+        "id": 6565
+    },
+    {
+        "codigoBarra": "123456",
+        "nombre": "Martilloooo",
+        "tipo": "Herramientassss",
+        "stock": 2,
+        "precio": 2.29999999999999982236431605997495353221893310546875,
+        "id": 4029
+    },
+    {
+        "codigoBarra": "123456",
+        "nombre": "Martilloooo",
+        "tipo": "Herramientassss",
+        "stock": 2,
+        "precio": 2.29999999999999982236431605997495353221893310546875,
+        "id": 1107
+    },
+    {
+        "codigoBarra": "123456",
+        "nombre": "Martilloooo",
+        "tipo": "Herramientassss",
+        "stock": 2,
+        "precio": 2.29999999999999982236431605997495353221893310546875,
+        "id": 9880
+    },
+    {
+        "codigoBarra": "123456",
+        "nombre": "Martilloooo",
+        "tipo": "Herramientassss",
+        "stock": 2,
+        "precio": 2.29999999999999982236431605997495353221893310546875,
+        "id": 9450
+    },
+    {
+        "codigoBarra": "123456",
+        "nombre": "Martilloooo",
+        "tipo": "Herramientassss",
+        "stock": 2,
+        "precio": 2.29999999999999982236431605997495353221893310546875,
+        "id": 4410
+    },
+    {
+        "codigoBarra": "123456",
+        "nombre": "Martilloooo",
+        "tipo": "Herramientassss",
+        "stock": 2,
+        "precio": 2.29999999999999982236431605997495353221893310546875,
+        "id": 9430
+    },
+    {
+        "codigoBarra": "123456",
+        "nombre": "Martilloooo",
+        "tipo": "Herramientassss",
+        "stock": 2,
+        "precio": 2.29999999999999982236431605997495353221893310546875,
+        "id": 750
+    },
+    {
+        "codigoBarra": "123466",
+        "nombre": "Martilloooo",
+        "tipo": "Herramientassss",
+        "stock": 3,
+        "precio": 2.29999999999999982236431605997495353221893310546875,
+        "id": 2536
+    }
+]
