@@ -1,0 +1,14 @@
+[
+    {
+        "id": 4764,
+        "codigoBarra": "123444",
+        "idUsuario": 6287,
+        "cantidad": 3
+    },
+    {
+        "id": 2,
+        "codigoBarra": "123456",
+        "idUsuario": 1337,
+        "cantidad": 10
+    }
+]

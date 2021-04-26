@@ -1,0 +1,34 @@
+[
+    {
+        "codigoBarra": "123456",
+        "nombre": "Martillo",
+        "tipo": "Herramienta",
+        "stock": 15,
+        "precio": 20.5,
+        "id": 7735
+    },
+    {
+        "codigoBarra": "122245",
+        "nombre": "Taladro",
+        "tipo": "Herramienta",
+        "stock": 7,
+        "precio": 70.90,
+        "id": 4681
+    },
+    {
+        "codigoBarra": "123334",
+        "nombre": "Lentes",
+        "tipo": "Vestimenta",
+        "stock": 0,
+        "precio": 30.50,
+        "id": 2238
+    },
+    {
+        "codigoBarra": "123444",
+        "nombre": "Guantes",
+        "tipo": "Vestimenta",
+        "stock": 4,
+        "precio": 15.70,
+        "id": 6565
+    }
+]
